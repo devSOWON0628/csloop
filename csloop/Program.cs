@@ -98,6 +98,12 @@ namespace csloop
                 }
                 Console.WriteLine(i);
             }
+
+            //
+
+            string input2 = "Potato Tomato";
+            Console.WriteLine(input2.ToUpper());
+            Console.WriteLine(input2.ToLower());
         }
     }
 }
