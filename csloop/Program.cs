@@ -125,6 +125,34 @@ namespace csloop
 
             string[] array2 = { "감자", "고구마", "토마토", "가지"};
             Console.WriteLine(string.Join(",", array2));
+
+            //
+
+            bool state = true;
+            while (state)
+            {
+                ConsoleKeyInfo info = Console.ReadKey();
+                switch (info.Key)
+                {
+                    case ConsoleKey.UpArrow:
+                        Console.WriteLine("위로 이동");
+                        break;
+                    case ConsoleKey.RightArrow:
+                        Console.WriteLine("오른쪽으로 이동");
+                        break;
+                    case ConsoleKey.DownArrow:
+                        Console.WriteLine("아래쪽으로 이동");
+                        break;
+                    case ConsoleKey.LeftArrow:
+                        Console.WriteLine("왼쪽으로 이동");
+                        break;
+                    case ConsoleKey.X:
+                        state = false;
+                        break;
+                }
+            }
+
+
         }
     }
 }
