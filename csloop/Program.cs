@@ -114,6 +114,16 @@ namespace csloop
             {
                 Console.WriteLine(item);
             }
+
+            //
+
+            string input4 = " test     \n";
+            Console.WriteLine("::" + input4.Trim() + "::");
+            Console.Read();
+
+            //
+
+
         }
     }
 }
