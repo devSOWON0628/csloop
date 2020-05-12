@@ -123,7 +123,8 @@ namespace csloop
 
             //
 
-
+            string[] array2 = { "감자", "고구마", "토마토", "가지"};
+            Console.WriteLine(string.Join(",", array2));
         }
     }
 }
