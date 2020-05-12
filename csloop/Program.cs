@@ -33,9 +33,9 @@ namespace csloop
             {
                 Console.WriteLine(item);
             }
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
 
-            int x = 1;
+           /* int x = 1;
             while (x < 50)
             {
                 Console.Clear();
@@ -54,6 +54,28 @@ namespace csloop
                 }
                 Thread.Sleep(100);
                 x++;
+            }*/
+
+            for(int i = 0; i < 10; i++)
+            {
+                for(int j = 0; j < i + 1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("\n");
+            }
+
+             for(int i = 0; i < 10; i++)
+            {
+                for(int j = 0; j < 10; j++)
+                {
+                    Console.Write("  ");
+                }
+                for(int j = 0; j < i + 1; j++)
+                {
+                    Console.Write("*");
+                }
+                Console.WriteLine("\n");
             }
         }
     }
