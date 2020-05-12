@@ -104,6 +104,16 @@ namespace csloop
             string input2 = "Potato Tomato";
             Console.WriteLine(input2.ToUpper());
             Console.WriteLine(input2.ToLower());
+
+            //
+
+            string input3 = "감자 고구마 토마토";
+            string[] inputs = input3.Split(new char[] { ' ' });
+
+            foreach(var item in inputs)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
